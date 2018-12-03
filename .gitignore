@@ -41,6 +41,7 @@ war-*
 /target
 target
 
+lib/*
 
 .extract
 
