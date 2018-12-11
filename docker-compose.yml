@@ -2,7 +2,7 @@
 version: '3'
 services:
     nginx:
-        image: sonatype/nexus:oss
+        image: sonatype/nexus3
         container_name: nexusoss
         ports:
             - "80:8081"
@@ -11,4 +11,5 @@ services:
         restart: always
         volumes:
             - /opt/nexus/data:/nexus-data
+            - /opt/nexus/work:/nexus-work
 

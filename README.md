@@ -48,6 +48,10 @@ chown devops:devops /opt/nexus
 #as devops
 cd /opt/nexus
 mkdir data
+mkdir work
+
+ 
+
 
 ### POSSIBLY NEEDED ... 
 ```
@@ -76,8 +80,7 @@ services:
         restart: always
         volumes:
             - /opt/nexus/data:/nexus-data
- 
+            - /opt/nexus/work:/nexus-work
+
 EOF
-
-
-
+ 
